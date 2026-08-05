@@ -1,69 +1,64 @@
-/*Marks Example*/
-        let age = 40;
-        if(age >= 20){
-            console.log("You are Eligible to vote");
-        }else{
-            console.log("You are Not Eligible to vote");
-        }
+
+/*Functions*/
+
+function sayGreet() {
+    alert("Welcome to my website");
+}
+sayGreet();
 
 
-/*Grade Example*/
-        let grade = "A";
-
-        if(grade == "A"){
-            console.log("Excellent");
-        }else if(grade == "B"){
-             console.log("Good");
-        }else if(grade == "C"){
-            console.log("Average");
-        }else if(grade == "D"){
-            console.log("Below Average");
-        }else{
-            console.log("Fail");
-        }
-
-/*weight example*/
-        let weight = 45;
-        if(weight == 59){
-            console.log("Rejected");
-        }else if(weight >=60){
-            console.log("Accepted");
-        }else if(weight <=59){
-            console.log("Refer Category B");
-        }
-/* And BMI Example*/
-        let bmi = 23;
-        if(bmi < 18.5){
-            console.log("underweight");
-        }else if(bmi >= 18.5 && bmi <= 24.9){
-            console.log("Normal weight");
-        }else if(bmi >=25 && bmi <= 29.9){
-            console.log("Overweight");
-        }else if(bmi >=30 && bmi <= 39.9){
-            console.log("obese");
-        } else{
-            console.log("extremely obese");
-        }
-/* Or Example */
-        let domicile = "Punjab";
-        let userage = 25;
-        if(domicile == "Punjab" || userage >=18){
-            console.log("Eligible for Voting");
-        }else{
-            console.log("Not Eligible for Voting");
-        }
-
-        let isRaining = true;
-        if(isRaining != false){
-            console.log("Go for a walk");
-        }
+function sum() {
+    console.log(5 + 10);
+}
+sum();
 
 
-        let weekday = "Sunday";
-        if(weekday !== "Sunday"){
-            console.log("Go to Work");
-        }else {
-            console.log("Enjoy your weekend");
-        }
+function calculateBMI(w, h) {
+    const bmi = w / (h * h);
+    console.log(bmi);
+    return bmi;
+}
+
+calculateBMI(70, 1.75);
+
+
+function calculateRectangle(w, l) {
+    const rectangle = l * w;
+    console.log(rectangle);
+    return rectangle;
+}
+calculateRectangle(6, 9);
+
+
+
+function calculateSimpleinterest(p, t, r) {
+    const SimpleIntrest = (p * t * r) / 100;
+    console.log(SimpleIntrest);
+    return SimpleIntrest;
+}
+let si = calculateSimpleinterest(2000, 50, 80);
+
+if (si > 50) {
+    console.log("Too much Interest");
+} else {
+    console.log("Intreset is fine");
+}
+
+
+function dateOfBirth(current, birth) {
+    const age = current - birth;
+    console.log(age);
+    return age;
+}
+
+dateOfBirth(26, 4);
+
+
+
+
+
+
+
+
 
 
